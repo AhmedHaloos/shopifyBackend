@@ -11,9 +11,25 @@ const port = 5000;
 
 app.use(express.json())
 
-app.route('/', (req, res)=>{
+app.route('/')
+.get((req, res)=>{
 
-    res.send('<h1> Hello to shopify server developed by ahmed saeed</h1>')
+    res.send("<h1> Shopify Serevr Developed By: Ahmed Saeed </h1>")
+
+})
+.post((req, res)=>{
+
+    res.send("<h1> Shopify Serevr Developed By: Ahmed Saeed </h1>")
+
+})
+.put((req, res)=>{
+
+    res.send("<h1> Shopify Serevr Developed By: Ahmed Saeed </h1>")
+
+})
+.delete((req, res)=>{
+
+    res.send("<h1> Shopify Serevr Developed By: Ahmed Saeed </h1>")
 
 })
 
